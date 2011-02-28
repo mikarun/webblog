@@ -1,0 +1,7 @@
+<% title "My Songs list" %>
+<p>Select the song you what to play</p>
+<% unless @songs.blank? %>
+<ul>
+  <%= render :partial=> "song", :collection => @songs %>
+</ul>
+<%end -%>
